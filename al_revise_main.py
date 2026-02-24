@@ -78,7 +78,6 @@ L_2_points1 = []
 L_re_points = []
 L_re_points1 = []
 
-# 生成随机信道系数 (0到1之间)
 num_samples = 1000
 num_features = 100
 random.seed(2)
@@ -88,7 +87,7 @@ input_dim = num_features
 hidden_dim1 = 64
 hidden_dim2 = 32
 hidden_dim3 = 16
-output_dim = 20  # 功率、计算频率、卸载策略
+output_dim = 20 
 res_dim1 = 1
 res_dim2 = 64
 res_dim3 = 32
@@ -99,13 +98,13 @@ input_dim_1 = num_features
 hidden_dim1_1 = 64
 hidden_dim2_1 = 32
 hidden_dim3_1 = 20
-output_dim_1 = 5  # 功率、计算频率、卸载策略
+output_dim_1 = 5  
 # 定义DNN模型参数2
 input_dim_2 = num_features
 hidden_dim1_2 = 64
 hidden_dim2_2 = 32
 hidden_dim3_2 = 16
-output_dim_2 = 5  # 功率、计算频率、卸载策略
+output_dim_2 = 5  
 l2 = 0.001
 
 # 初始化权重和偏置
@@ -1056,5 +1055,6 @@ plt.plot(points, t_2_points, color='green', label='Learning_residual')
 plt.xlabel('Iterations')
 plt.ylabel('delay')
 plt.legend()
+
 
 plt.show()
